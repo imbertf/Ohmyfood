@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <script src="https://kit.fontawesome.com/1bd39241cb.js" crossorigin="anonymous"></script>
     <title>Ohmyfood!</title>
 </head>
 
@@ -15,8 +16,10 @@
     </header>
 
     <div class="map__localisation">
-        <i class="fa-solid fa-location-dot"></i>
-        Paris, Belleville
+        <div class="map__localisation--txt">
+            <i class="fa-solid fa-location-dot"></i>
+            Paris, Belleville
+        </div>
     </div>
 
     <article class="article__presentation">
@@ -27,16 +30,16 @@
 
     <article class="article__fonctionnement">
         <h2>Fonctionnement</h2>
-        <div class="article__fonctionnement--btn">
+        <div class="article__fonctionnement--card">
             <i class="fa-solid fa-1"></i>
             <button class="btn__fonctionnement"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
                 restaurant</button>
         </div>
-        <div class="article__fonctionnement--btn">
+        <div class="article__fonctionnement--card">
             <i class="fa-solid fa-2"></i>
             <button class="btn__fonctionnement"><i class="fa-solid fa-list"></i>Composez votre menu</button>
         </div>
-        <div class="article__fonctionnement--btn">
+        <div class="article__fonctionnement--card">
             <i class="fa-solid fa-3"></i>
             <button class="btn__fonctionnement"><i class="fa-solid fa-store"></i>Dégustez au restaurant</button>
         </div>
@@ -45,49 +48,61 @@
     <section class="section__restaurants">
         <h2>Restaurants</h2>
         <div class="vignette__restaurant">
-            <div class="icone__nouveau">
+            <div class="icone__restaurant--nouveau">
                 <p>Nouveau</p>
             </div>
             <img src="/public/images/restaurants/wennington.jpg" alt="restaurant Ménilmontant">
             <div class="vignette__restaurant--txt">
-                <H3>La palette du goût</H3>
-                <p>Ménilmontant</p>
-                <i class="fa-regular fa-heart"></i>
+                <div>
+                    <H3>La palette du goût</H3>
+                    <p>Ménilmontant</p>
+                </div>
+                <div class="icone__restaurant--heart"><i class="fa-regular fa-heart"></i></div>
             </div>
         </div>
         <div class="vignette__restaurant">
-            <div class="icone__nouveau">
+            <div class="icone__restaurant--nouveau">
                 <p>Nouveau</p>
             </div>
             <img src="/public/images/restaurants/dishes.jpg" alt="restaurant Charonne">
             <div class="vignette__restaurant--txt">
-                <H3>La note enchantée</H3>
-                <p>Charonne</p>
-                <i class="fa-regular fa-heart"></i>
+                <div>
+                    <H3>La note enchantée</H3>
+                    <p>Charonne</p>
+                </div>
+                <div class="icone__restaurant--heart"><i class="fa-regular fa-heart"></i></div>
             </div>
         </div>
         <div class="vignette__restaurant">
             <img src="/public/images/restaurants/eggs.jpg" alt="restaurant Cité Rouge">
             <div class="vignette__restaurant--txt">
-                <H3>A la française</H3>
-                <p>Cité Rouge</p>
-                <i class="fa-regular fa-heart"></i>
+                <div>
+                    <H3>A la française</H3>
+                    <p>Cité Rouge</p>
+                </div>
+                <div class="icone__restaurant--heart"><i class="fa-regular fa-heart"></i></div>
             </div>
         </div>
         <div class="vignette__restaurant">
             <img src="/public/images/restaurants/hansel.jpg" alt="restaurant Folie-Méricourt">
             <div class="vignette__restaurant--txt">
-                <H3>Le délice des sens</H3>
-                <p>Folie-Méricourt</p>
-                <i class="fa-regular fa-heart"></i>
+                <div>
+                    <H3>Le délice des sens</H3>
+                    <p>Folie-Méricourt</p>
+                </div>
+                <div class="icone__restaurant--heart"><i class="fa-regular fa-heart"></i></div>
             </div>
         </div>
     </section>
 
     <footer>
-        <img src="/public/images/logo/ohmyfood.png" alt="logo ohmyfood">
-        <i class="fa-solid fa-utensils">Proposer un restaurant</i>
-        <i class="fa-solid fa-handshake-angle"> Devenir partenaire</i>
+        <h2>ohmyfood</h2>
+        <div class="footer__icone"><i class="fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+        </div>
+        <div class="footer__icone"><i class="fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+        </div>
         <p>Mentions légales</p>
         <a href="#">Contact</a>
     </footer>

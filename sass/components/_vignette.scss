@@ -1,0 +1,24 @@
+.vignette__restaurant {
+    // border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px lightgrey;
+    background: white;
+    margin: 10px 0;
+
+    & img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    &--txt{
+        // border: 1px solid green;
+        padding: 0 10px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & h3, p{
+            margin: 0;
+        }
+    }
+}

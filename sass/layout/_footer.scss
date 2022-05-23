@@ -1,0 +1,11 @@
+footer{
+    border: 1px solid green;
+        background: #3C3C3C;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        & img{
+            border: 1px solid green;
+        }
+}
