@@ -1,0 +1,11 @@
+{
+  "name": "imbert_florian_3_code_052022",
+  "version": "1.0.0",
+  "description": "Ohmyfood! projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "imbertf",
+  "license": "ISC"
+}
