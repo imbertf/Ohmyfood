@@ -1,9 +1,12 @@
-$breakpoints: (
-    mobile: 790px
-);
+// $breakpoints: (
+//     mobile: 790px
+// );
 
 
-@mixin mobile__mediaquerie {
-    @media screen and (max-width: map-get($breakpoints, mobile))
-{}
-}
+// @mixin mobile__mediaquerie {
+//     @media screen and (max-width: map-get($breakpoints, mobile)){
+//         border: 1px solid green;
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
