@@ -1,11 +1,22 @@
-footer{
+footer {
     border: 1px solid green;
-        background: #3C3C3C;
-        color: white;
+    background: #3C3C3C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+
+    &__icone--txt{
+        margin: 0 10px;
+    }
+
+    &__group--icone {
+        border: 1px solid;
         display: flex;
-        flex-direction: column;
-        padding: 0 30px;
-        & img{
-            border: 1px solid green;
-        }
+        justify-content: flex-start;
+    }
+
+    & img {
+        border: 1px solid green;
+    }
 }
