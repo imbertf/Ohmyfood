@@ -5,8 +5,9 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
-    & img {
-        // border: 1px solid green;
+    & a{
+    text-decoration: none;
+    color: white;
     }
 }
 
