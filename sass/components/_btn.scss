@@ -7,6 +7,11 @@
     border-radius: 25px;
     background: linear-gradient(to right bottom, $secondary-color, $primary-color);
     color: white;
+    &--commander {
+        // border: 1px solid green;
+        width: 170px;
+        height: 45px;
+    }
 }
 
 .btn__fonctionnement{
