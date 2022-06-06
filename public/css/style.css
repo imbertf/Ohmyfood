@@ -395,20 +395,28 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    border-radius: 20px;
     cursor: pointer;
   }
   .restaurant__card:hover + .restaurant__animation {
     -webkit-animation: scale-up-hor-right 0.4s both;
     animation: scale-up-hor-right 0.4s both;
+    transform-origin: right;
   }
   .restaurant__card:hover + .restaurant__animation i {
+    color: #fff;
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
   }
 
+  .restaurant__txt-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+
   .restaurant__animation {
+    display: none;
     height: 70px;
     width: 50px;
     border-radius: 0 20px 20px 0;
@@ -425,6 +433,7 @@ section {
     font-family: "robotoregular";
     font-size: 15px;
     margin: 10px;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -437,6 +446,7 @@ section {
     margin: 20px;
     display: flex;
     align-items: flex-end;
+    transition: 0.5 ease;
   }
 }
 

@@ -537,19 +537,33 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 70px;
-    border-radius: 20px;
     cursor: pointer;
   }
   .restaurant__card:hover + .restaurant__animation {
     -webkit-animation: scale-up-hor-right 0.4s both;
     animation: scale-up-hor-right 0.4s both;
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
   .restaurant__card:hover + .restaurant__animation i {
+    color: #fff;
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
   }
+  .restaurant__txt-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+  }
   .restaurant__animation {
+    display: none;
     height: 70px;
     width: 50px;
     border-radius: 0 20px 20px 0;
@@ -571,6 +585,7 @@ section {
     font-family: "robotoregular";
     font-size: 15px;
     margin: 10px;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -587,6 +602,8 @@ section {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-transition: 0.5 ease;
+    transition: 0.5 ease;
   }
 }
 /*# sourceMappingURL=main.css.map */
