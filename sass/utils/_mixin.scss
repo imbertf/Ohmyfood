@@ -1,0 +1,44 @@
+@mixin font-title {
+    font-family: "Shrikhand-regular";
+    font-size: 25px;
+}
+
+@mixin font-txt {
+    font-family: "robotoregular";
+    font-size: 15px;
+    margin: 10px;
+}
+
+@mixin card-base {
+    font-family: "robotoregular";
+    font-size: 15px;
+    background: $light-color;
+    box-shadow: 0px 5px 10px lightgrey;
+    border-radius: 20px;
+    height: 70px;
+}
+
+@mixin card-template {
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px lightgrey;
+    font-size: 15px;
+    font-family: 'robotoregular';
+    background: $card-color;
+}
+
+@mixin card-base--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin heart-color {
+    background: linear-gradient(to right bottom, $secondary-color, $primary-color);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

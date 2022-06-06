@@ -1,4 +1,4 @@
-.icone__restaurant--nouveau{
+.icone__restaurant--nouveau {
     // border: 1px solid green;
     position: absolute;
     right: 40px;
@@ -13,12 +13,23 @@
     align-items: center;
 }
 
-.icone__restaurant--heart{
+.icone__restaurant--heart {
     // border: 1px solid green;
     width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
     font-size: 20px;
+}
+
+.fa-heart:hover {
+    animation: bgcolor 0.5s;
+    font-weight: 900;
+    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
