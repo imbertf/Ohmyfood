@@ -61,7 +61,7 @@
         @include card-template;
         @include card-base--flex;
         cursor: pointer;
-        &:hover + .restaurant__animation {
+        &:hover > .restaurant__animation {
             -webkit-animation: scale-up-hor-right 0.4s both;
             animation: scale-up-hor-right 0.4s both;
             transform-origin: right;
@@ -70,6 +70,9 @@
                 -webkit-animation: rotate-center 0.6s ease-in-out both;
                 animation: rotate-center 0.6s ease-in-out both;
             }
+        }
+        &:hover .restaurant__txt--price {
+            transform: translateX(-50px);
         }
     }
 
@@ -86,6 +89,8 @@
         border-radius: 0 20px 20px 0;
         background: $tertiary-color;
         @include flex-center;
+        transition: transform 500ms;
+        opacity: 0;
         & i {
             color: $card-color;
         }
@@ -103,13 +108,13 @@
 
         &--price {
             font-weight: bolder;
-            height: 70%;
             margin: 20px;
             display: flex;
             align-items: flex-end;
-            transition: 0.5 ease;
+            position: absolute;
+            right: 10px;
+            transition: transform 500ms ease;
         }
     }
-
-
 }
+

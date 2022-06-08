@@ -13,8 +13,8 @@
 
 @-webkit-keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
   }
@@ -28,16 +28,20 @@
 
 @keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
+  }
+  30% {
+    opacity: .5;
   }
   100% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
+    opacity: 1;
   }
 }
 
@@ -539,16 +543,20 @@ section {
             justify-content: space-between;
     cursor: pointer;
   }
-  .restaurant__card:hover + .restaurant__animation {
+  .restaurant__card:hover > .restaurant__animation {
     -webkit-animation: scale-up-hor-right 0.4s both;
     animation: scale-up-hor-right 0.4s both;
     -webkit-transform-origin: right;
             transform-origin: right;
   }
-  .restaurant__card:hover + .restaurant__animation i {
+  .restaurant__card:hover > .restaurant__animation i {
     color: #fff;
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
+  }
+  .restaurant__card:hover .restaurant__txt--price {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
   .restaurant__txt-price {
     display: -webkit-box;
@@ -577,6 +585,11 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+    opacity: 0;
   }
   .restaurant__animation i {
     color: #fff;
@@ -594,7 +607,6 @@ section {
   }
   .restaurant__txt--price {
     font-weight: bolder;
-    height: 70%;
     margin: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -602,8 +614,12 @@ section {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -webkit-transition: 0.5 ease;
-    transition: 0.5 ease;
+    position: absolute;
+    right: 10px;
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease, -webkit-transform 500ms ease;
   }
 }
 /*# sourceMappingURL=main.css.map */

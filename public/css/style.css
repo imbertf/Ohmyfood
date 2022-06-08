@@ -11,8 +11,8 @@
 }
 @-webkit-keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
   }
@@ -25,16 +25,20 @@
 }
 @keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
+  }
+  30% {
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
+    opacity: 1;
   }
 }
 @-webkit-keyframes rotate-center {
@@ -397,15 +401,18 @@ section {
     justify-content: space-between;
     cursor: pointer;
   }
-  .restaurant__card:hover + .restaurant__animation {
+  .restaurant__card:hover > .restaurant__animation {
     -webkit-animation: scale-up-hor-right 0.4s both;
     animation: scale-up-hor-right 0.4s both;
     transform-origin: right;
   }
-  .restaurant__card:hover + .restaurant__animation i {
+  .restaurant__card:hover > .restaurant__animation i {
     color: #fff;
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
+  }
+  .restaurant__card:hover .restaurant__txt--price {
+    transform: translateX(-50px);
   }
 
   .restaurant__txt-price {
@@ -424,6 +431,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 500ms;
+    opacity: 0;
   }
   .restaurant__animation i {
     color: #fff;
@@ -442,11 +451,12 @@ section {
   }
   .restaurant__txt--price {
     font-weight: bolder;
-    height: 70%;
     margin: 20px;
     display: flex;
     align-items: flex-end;
-    transition: 0.5 ease;
+    position: absolute;
+    right: 10px;
+    transition: transform 500ms ease;
   }
 }
 
