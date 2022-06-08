@@ -19,6 +19,7 @@
 }
 
 @mixin card-template {
+    margin: 15px;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0 5px 10px lightgrey;
