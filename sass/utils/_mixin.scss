@@ -19,7 +19,7 @@
 }
 
 @mixin card-template {
-    margin: 15px;
+    margin: 15px 0;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0 5px 10px lightgrey;
@@ -48,4 +48,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+@mixin animation-delay {
+    animation-delay: 500ms;
+}
+
+@mixin animation-delay--1 {
+    animation-delay: 1s;
+}
+
+@mixin animation-delay--2 {
+    animation-delay: 1.5s;
 }

@@ -58,6 +58,8 @@
 
     .restaurant__card {
         // border: 1px solid green;
+        -webkit-animation: card-fondu 1s;
+        animation: card-fondu 1s;
         @include card-template;
         @include card-base--flex;
         cursor: pointer;
@@ -85,7 +87,7 @@
         // border: 1px solid green;
         display: none;
         height: 70px;
-        width: 50px;
+        width: 80px;
         border-radius: 0 20px 20px 0;
         background: $tertiary-color;
         @include flex-center;
@@ -93,6 +95,7 @@
         opacity: 0;
         & i {
             color: $card-color;
+            font-size: 20px;
         }
     }
 
@@ -101,9 +104,16 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
         &--bolder {
             font-weight: bolder;
+            & p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        &--mini p {
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         &--price {
