@@ -58,8 +58,11 @@
 
     .restaurant__card {
         // border: 1px solid green;
-        -webkit-animation: card-fondu 1s;
-        animation: card-fondu 1s;
+        opacity: 0;
+        -webkit-animation: card-fondu 1s ease-in both;
+        animation: card-fondu 1s ease-in both;
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
         @include card-template;
         @include card-base--flex;
         cursor: pointer;
