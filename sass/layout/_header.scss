@@ -65,6 +65,10 @@
         object-fit: cover;
         height: 400px;
     }
+    @include desktop-only {
+        object-fit: cover;
+        height: 300px;
+    }
 }
 
 .header__background--page2 img {

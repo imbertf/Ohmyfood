@@ -1,62 +1,70 @@
 // animation loader //
 
 @-webkit-keyframes spin {
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes spinreverse{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+@-webkit-keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
-@keyframes spinreverse{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+
+@keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
 @-webkit-keyframes loader-opacity {
-  0%{
+  0% {
     opacity: .8;
   }
-  100%{
+
+  100% {
     opacity: 0;
     transform: scale(0);
   }
 }
+
 @keyframes loader-opacity {
-  0%{
+  0% {
     opacity: .8;
   }
-  100%{
+
+  100% {
     opacity: 0;
     transform: scale(0);
   }
@@ -67,87 +75,99 @@
 @-webkit-keyframes scale-up-hor-right {
   0% {
     -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
   }
+
   30% {
     opacity: .5;
   }
+
   100% {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
   }
 }
+
 @keyframes scale-up-hor-right {
   0% {
     -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
   }
 
   30% {
     opacity: .5;
   }
+
   100% {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-            opacity: 1;
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
 }
 
 
-  // rotation animation carte restaurant //
-  @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+// rotation animation carte restaurant //
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
 
-  // apparition fondu carte restaurant //
-  @-webkit-keyframes card-fondu {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    50% {
-      opacity: .5;
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  @keyframes card-fondu {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    50% {
-      opacity: .5;
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// apparition fondu restaurant card //
+@-webkit-keyframes card-fondu {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-fondu {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

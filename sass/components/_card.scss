@@ -94,6 +94,9 @@
         @include card-template;
         @include card-base--flex;
         cursor: pointer;
+        @include desktop-only {
+            width: 95%;
+        }
 
         &--box {
             @include tablette-only {

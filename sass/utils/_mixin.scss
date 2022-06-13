@@ -35,17 +35,11 @@
 
     @mixin desktop-only {
         @media screen and (min-width: map-get($breakpoints, tablette)) {
-            border: 1px solid orange;
+            // border: 1px solid orange;
             @content;
         }
     }
-
-    @mixin mix-tablette-desktop {
-        @include tablette-only;
-        @include desktop-only;
-        @content;
-    }
-
+    
     //   _________________________________________________
     //  |                                                 |
     //  |                    flex                         |         
@@ -117,6 +111,13 @@
     //  |                    animation                    |         
     //  |_________________________________________________|
     // 
+    
+    @mixin heart-position {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        font-size: 30px;
+    }
 
     @mixin animation-delay {
         animation-delay: 500ms;
