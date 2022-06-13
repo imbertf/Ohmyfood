@@ -1,7 +1,20 @@
-section {
+.section__restaurant {
     background: #efefef;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include tablette-only {
+        display: flex;
+        align-items: center;
+    }
+    @include desktop-only {
+        align-items: center;
+    }
+}
+
+.main__menu--box {
+    @include tablette-only {
+        @include flex-column-center;
+    }
 }

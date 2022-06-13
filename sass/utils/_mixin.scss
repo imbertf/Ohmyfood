@@ -1,63 +1,131 @@
-@mixin font-title {
-    font-family: "Shrikhand-regular";
-    font-size: 25px;
-}
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    font                         |         
+    //  |_________________________________________________|
+    // 
 
-@mixin font-txt {
-    font-family: "robotoregular";
-    font-size: 15px;
-    margin: 10px;
-}
+    @mixin font-title {
+        font-family: "Shrikhand-regular";
+        font-size: 25px;
+    }
 
-@mixin card-base {
-    font-family: "robotoregular";
-    font-size: 15px;
-    background: $light-color;
-    box-shadow: 0px 5px 10px lightgrey;
-    border-radius: 20px;
-    height: 70px;
-}
+    @mixin font-txt {
+        font-family: "robotoregular";
+        font-size: 15px;
+        margin: 10px;
+    }
 
-@mixin card-template {
-    margin: 15px 0;
-    height: 70px;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px lightgrey;
-    font-size: 15px;
-    font-family: 'robotoregular';
-    background: $card-color;
-}
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    media-querie                 |         
+    //  |_________________________________________________|
+    // 
+    @mixin mobile-only {
+        @media screen and (mix-width: map-get($breakpoints, tablette)) {
+            @content;
+        }
+    }
 
-@mixin card-base--flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    @mixin tablette-only {
+        @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+            // border: 1px solid red;
+            @content;
+        }
+    }
 
-@mixin heart-color {
-    background: linear-gradient(to right bottom, $secondary-color, $primary-color);
-}
+    @mixin desktop-only {
+        @media screen and (min-width: map-get($breakpoints, tablette)) {
+            border: 1px solid orange;
+            @content;
+        }
+    }
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    @mixin mix-tablette-desktop {
+        @include tablette-only;
+        @include desktop-only;
+        @content;
+    }
 
-@mixin flex-end {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    flex                         |         
+    //  |_________________________________________________|
+    // 
 
-@mixin animation-delay {
-    animation-delay: 500ms;
-}
+    @mixin card-base--flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-@mixin animation-delay--1 {
-    animation-delay: 1s;
-}
+    @mixin flex-column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-@mixin animation-delay--2 {
-    animation-delay: 1.5s;
-}
+    @mixin flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @mixin flex-end {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    @mixin flex-wrap-space-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    card                         |         
+    //  |_________________________________________________|
+    // 
+
+    @mixin card-base {
+        font-family: "robotoregular";
+        font-size: 15px;
+        background: $light-color;
+        box-shadow: 0px 5px 10px lightgrey;
+        border-radius: 20px;
+        height: 70px;
+    }
+
+    @mixin card-template {
+        margin: 15px 0;
+        height: 70px;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px lightgrey;
+        font-size: 15px;
+        font-family: 'robotoregular';
+        background: $card-color;
+    }
+
+    @mixin heart-color {
+        background: linear-gradient(to right bottom, $secondary-color, $primary-color);
+    }
+
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    animation                    |         
+    //  |_________________________________________________|
+    // 
+
+    @mixin animation-delay {
+        animation-delay: 500ms;
+    }
+
+    @mixin animation-delay--1 {
+        animation-delay: 1s;
+    }
+
+    @mixin animation-delay--2 {
+        animation-delay: 1.5s;
+    }

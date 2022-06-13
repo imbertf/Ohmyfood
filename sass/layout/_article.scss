@@ -1,4 +1,3 @@
-@media screen and (max-width: 790px) {
     .article {
         border: 1px solid green;
 
@@ -24,18 +23,46 @@
         }
 
         &__fonctionnement {
+
             // border: 1px solid green;
+            @include tablette-only {
+                &--bloc-card {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
+            @include desktop-only {
+                @include flex-column-center;
+                &--bloc-card {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+
             padding: 0 15px;
             margin: 45px 0;
 
             & h2 {
                 margin-top: 0;
+
+                @include tablette-only {
+                    text-align: center;
+                }
             }
 
             &--card {
                 display: flex;
                 align-items: center;
                 margin: 10px -15px;
+
+                @include tablette-only {
+                    width: 30%;
+                }
+                @include desktop-only {
+                    width: 400px;
+                }
             }
 
             & i {
@@ -53,4 +80,3 @@
             }
         }
     }
-}

@@ -1,47 +1,73 @@
-$logo-size: 150px;
+.header__mobile {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+    @include desktop-only {
+        height: 200px;
+    }
 
-@media screen and (max-width: 790px) {
-    .header__mobile {
+    &--arrow {
+        font-size: 25px;
+        position: absolute;
+        left: 20px;
+    }
+
+    &--logo {
         // border: 1px solid green;
+        width: 150px;
         display: flex;
         justify-content: center;
-        height: 60px;
-        align-items: center;
-        box-shadow: 0px 0px 5px grey;
-        position: relative;
 
-        &--arrow {
-            font-size: 25px;
-            position: absolute;
-            left: 20px;
-        }
-
-        &--logo {
+        & img {
             // border: 1px solid green;
-            width: 150px;
-            display: flex;
-            justify-content: center;
-
-            & img {
-                // border: 1px solid green;
-                width: $logo-size;
-                height: 30px;
+            width: $logo-size;
+            height: 30px;
+            @include desktop-only {
+                height: 50px;
+                width: auto;
             }
         }
-        & a {
-            text-decoration: none;
-            color: black;
-            display: flex;
-            align-items: center;
-        }
     }
 
-    .header__background img {
-        width: 100%;
+    & a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
     }
+}
 
-    .header__background--page2 img{
-        height: 300px;
+.map__localisation{
+    // border: 1px solid green;
+    background: #DBDBDB;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--txt{
+        // border: 1px solid green;
+        width: 150px;
+    }
+    & i{
+        // border: 1px solid green;
+        margin-right: 5px;
+    }
+}
+
+.header__background img {
+    width: 100%;
+
+    @include tablette-only {
         object-fit: cover;
+        height: 400px;
     }
+}
+
+.header__background--page2 img {
+    height: 300px;
+    object-fit: cover;
 }

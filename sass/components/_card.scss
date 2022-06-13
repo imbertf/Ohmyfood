@@ -1,5 +1,3 @@
-@media screen and (max-width:790px) {
-
     .vignette__fonctionnement {
         @include card-base;
         width: 90%;
@@ -12,6 +10,7 @@
         align-items: center;
         justify-content: space-evenly;
 
+        // @include tablette-only;
         & i {
             // border: 1px solid green;
             font-size: 20px;
@@ -21,6 +20,7 @@
     }
 
     .vignette__restaurant {
+
         // border: 1px solid green;
         border-radius: 10px;
         box-shadow: 0 10px 10px lightgrey;
@@ -28,6 +28,34 @@
         margin: 10px 0;
         width: 100%;
         height: 250px;
+
+        @include tablette-only {
+            width: 300px;
+            margin: 10px;
+        }
+
+        @include desktop-only {
+            width: 300px;
+            margin: 10px;
+        }
+
+        &--bloc-card {
+            width: 100%;
+
+            @include tablette-only {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                justify-content: space-around;
+                align-content: center;
+            }
+
+            @include desktop-only {
+                display: flex;
+                justify-content: space-between;
+                height: 310px;
+            }
+        }
 
         & a {
             text-decoration: none;
@@ -66,16 +94,28 @@
         @include card-template;
         @include card-base--flex;
         cursor: pointer;
-        &:hover > .restaurant__animation {
+
+        &--box {
+            @include tablette-only {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+        }
+
+        &:hover>.restaurant__animation {
             -webkit-animation: scale-up-hor-right 0.4s both;
             animation: scale-up-hor-right 0.4s both;
             transform-origin: right;
+
             & i {
                 color: $card-color;
                 -webkit-animation: rotate-center 0.6s ease-in-out both;
                 animation: rotate-center 0.6s ease-in-out both;
             }
         }
+
         &:hover .restaurant__txt--price {
             transform: translateX(-50px);
         }
@@ -96,6 +136,7 @@
         @include flex-center;
         transition: transform 500ms;
         opacity: 0;
+
         & i {
             color: $card-color;
             font-size: 20px;
@@ -107,13 +148,16 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+
         &--bolder {
             font-weight: bolder;
+
             & p {
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
         }
+
         &--mini p {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -129,5 +173,3 @@
             transition: transform 500ms ease;
         }
     }
-}
-
