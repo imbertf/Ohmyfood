@@ -28,18 +28,16 @@
 
     @mixin tablette-only {
         @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
-            // border: 1px solid red;
             @content;
         }
     }
 
     @mixin desktop-only {
         @media screen and (min-width: map-get($breakpoints, tablette)) {
-            // border: 1px solid orange;
             @content;
         }
     }
-    
+
     //   _________________________________________________
     //  |                                                 |
     //  |                    flex                         |         
