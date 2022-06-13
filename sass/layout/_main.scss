@@ -82,10 +82,6 @@
         margin-left: 5px;
         width: 50px;
         font-size: 20px;
-        @include tablette-only {
-            border-bottom: 3px solid yellowgreen;
-            border-left: 3px solid yellowgreen;
-        }
     }
 
     .main__vignettes {
