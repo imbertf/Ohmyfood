@@ -1,7 +1,6 @@
     .bloc__page {
         @include tablette-only;
         @include desktop-only;
-        margin: 0;
         display: flex;
         flex-direction: column;
 

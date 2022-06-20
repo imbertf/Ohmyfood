@@ -23,21 +23,7 @@
 
 .icone__restaurant--heart {
     // border: 1px solid green;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    font-size: 20px;
-
-    @include tablette-only {
-        @include heart-position;
-    }
-
-    @include desktop-only {
-        @include heart-position;
-    }
+    font-size: 25px;
 }
 
 .fa-heart:active {
