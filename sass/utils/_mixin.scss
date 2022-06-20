@@ -17,6 +17,18 @@
 
     //   _________________________________________________
     //  |                                                 |
+    //  |                    txt                         |         
+    //  |_________________________________________________|
+    // 
+
+    @mixin overflow-ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    //   _________________________________________________
+    //  |                                                 |
     //  |                    media-querie                 |         
     //  |_________________________________________________|
     // 
@@ -90,6 +102,17 @@
         height: 70px;
     }
 
+    @mixin card-box {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    @mixin shadow {
+        box-shadow: 0px 5px 10px lightgrey;
+    }
+
     @mixin card-template {
         margin: 15px 0;
         height: 70px;
@@ -109,7 +132,7 @@
     //  |                    animation                    |         
     //  |_________________________________________________|
     // 
-    
+
     @mixin heart-position {
         width: inherit;
         height: inherit;
@@ -118,13 +141,25 @@
     }
 
     @mixin animation-delay {
-        animation-delay: 500ms;
+        opacity: 0;
+        -webkit-animation: card-fondu 1s ease-in both;
+        animation: card-fondu 1s ease-in both;
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
     }
 
     @mixin animation-delay--1 {
-        animation-delay: 1s;
+        opacity: 0;
+        -webkit-animation: card-fondu 1s ease-in both;
+        animation: card-fondu 1s ease-in both;
+        animation-delay: 3.5s;
+        -webkit-animation-delay: 3.5s;
     }
 
     @mixin animation-delay--2 {
-        animation-delay: 1.5s;
+        opacity: 0;
+        -webkit-animation: card-fondu 1s ease-in both;
+        animation: card-fondu 1s ease-in both;
+        animation-delay: 4s;
+        -webkit-animation-delay: 4s;
     }

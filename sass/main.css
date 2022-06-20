@@ -77,6 +77,24 @@
   }
 }
 
+@-webkit-keyframes heart-background {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes heart-background {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 @-webkit-keyframes scale-up-hor-right {
   0% {
     -webkit-transform: scaleX(0);
@@ -417,6 +435,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main__h2 {
+  display: none;
 }
 
 .header__mobile {
@@ -920,6 +942,18 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 830px) and (max-width: 1160px) {
+  .icone__restaurant--nouveau {
+    right: inherit;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .icone__restaurant--nouveau {
+    right: inherit;
+  }
+}
+
 .icone__restaurant--heart {
   width: 20px;
   height: 20px;
@@ -956,6 +990,17 @@ body {
     display: flex;
     font-size: 30px;
   }
+}
+
+.fa-heart:active {
+  -webkit-animation: bgcolor 0.5s;
+          animation: bgcolor 0.5s;
+  font-weight: 900;
+  background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 .fa-heart:hover {

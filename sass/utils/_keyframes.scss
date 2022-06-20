@@ -70,6 +70,18 @@
   }
 }
 
+// animation coeur //@at-root
+
+@keyframes heart-background {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
 
 // animation slide left carte restaurant //
 @-webkit-keyframes scale-up-hor-right {
@@ -113,6 +125,26 @@
   }
 }
 
+@-webkit-keyframes slide-left {
+  0%{
+      opacity: 0;
+  }
+
+  100%{
+      opacity: 1;
+      width: 100px;
+  }
+}
+@keyframes slide-left {
+  0%{
+      opacity: 0;
+  }
+
+  100%{
+      opacity: 1;
+      width: 100px;
+  }
+}
 
 // rotation animation carte restaurant //
 @-webkit-keyframes rotate-center {

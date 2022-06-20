@@ -11,6 +11,14 @@
     font-weight: bolder;
     justify-content: center;
     align-items: center;
+
+    @include tablette-only {
+        right: inherit;
+    }
+
+    @include desktop-only {
+        right: inherit;
+    }
 }
 
 .icone__restaurant--heart {
@@ -30,6 +38,16 @@
     @include desktop-only {
         @include heart-position;
     }
+}
+
+.fa-heart:active {
+    animation: bgcolor 0.5s;
+    font-weight: 900;
+    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 
 .fa-heart:hover {
