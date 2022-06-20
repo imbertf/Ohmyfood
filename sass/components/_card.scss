@@ -314,21 +314,33 @@
             height: 400px;
             @include card-box-bigSize;
             @include animation-delay;
+            @include tablette-only {
+                width: 100%;
+            }
         }
 
         &__box {
             @include card-box;
             @include animation-delay;
+            @include tablette-only {
+                width: 100%;
+            }
         }
 
         &__box--1 {
             @include card-box;
             @include animation-delay--1;
+            @include tablette-only {
+                width: 100%;
+            }
         }
 
         &__box--2 {
             @include card-box;
             @include animation-delay--2;
+            @include tablette-only {
+                width: 100%;
+            }
         }
 
         & p {

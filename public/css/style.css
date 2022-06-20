@@ -1076,6 +1076,11 @@ body {
   animation-delay: 3s;
   -webkit-animation-delay: 3s;
 }
+@media screen and (min-width: 830px) and (max-width: 1160px) {
+  .card__box--4cards {
+    width: 100%;
+  }
+}
 .card__box {
   height: 300px;
   display: flex;
@@ -1086,6 +1091,11 @@ body {
   animation: card-fondu 1s ease-in both;
   animation-delay: 3s;
   -webkit-animation-delay: 3s;
+}
+@media screen and (min-width: 830px) and (max-width: 1160px) {
+  .card__box {
+    width: 100%;
+  }
 }
 .card__box--1 {
   height: 300px;
@@ -1098,6 +1108,11 @@ body {
   animation-delay: 3.5s;
   -webkit-animation-delay: 3.5s;
 }
+@media screen and (min-width: 830px) and (max-width: 1160px) {
+  .card__box--1 {
+    width: 100%;
+  }
+}
 .card__box--2 {
   height: 300px;
   display: flex;
@@ -1108,6 +1123,11 @@ body {
   animation: card-fondu 1s ease-in both;
   animation-delay: 4s;
   -webkit-animation-delay: 4s;
+}
+@media screen and (min-width: 830px) and (max-width: 1160px) {
+  .card__box--2 {
+    width: 100%;
+  }
 }
 .card p {
   overflow: hidden;
