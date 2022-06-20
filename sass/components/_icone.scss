@@ -32,11 +32,22 @@
     font-size: 25px;
 }
 
-.fa-heart:hover {
+.fa-heart:active {
     font-weight: 900;
     background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
+}
+
+@include tablette-desktop {
+    .fa-heart:hover {
+        font-weight: 900;
+        background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
 }
