@@ -393,6 +393,11 @@
   margin-right: 5px;
 }
 
+.header__background--noteEnchantee {
+  height: 400px;
+  object-fit: cover;
+}
+
 .header__background img {
   width: 100%;
 }
@@ -1058,6 +1063,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card__box--4cards {
+  height: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0;
+  -webkit-animation: card-fondu 1s ease-in both;
+  animation: card-fondu 1s ease-in both;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
 }
 .card__box {
   height: 300px;

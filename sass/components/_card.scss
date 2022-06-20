@@ -309,7 +309,12 @@
         background-color: $card-color;
         @include shadow;
         @include flex-center;
-        // @include animation-delay;
+
+        &__box--4cards {
+            height: 400px;
+            @include card-box-bigSize;
+            @include animation-delay;
+        }
 
         &__box {
             @include card-box;
