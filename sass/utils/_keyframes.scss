@@ -1,4 +1,8 @@
-// animation loader //
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    loader                       |         
+    //  |_________________________________________________|
+    //
 
 @-webkit-keyframes spin {
   0% {
@@ -70,60 +74,12 @@
   }
 }
 
-// animation coeur //@at-root
 
-@keyframes heart-background {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
-
-// animation slide left carte restaurant //
-@-webkit-keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-
-  30% {
-    opacity: .5;
-  }
-
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-}
-
-@keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-
-  30% {
-    opacity: .5;
-  }
-
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                 card slide-left                 |         
+    //  |_________________________________________________|
+    //
 
 @-webkit-keyframes slide-left {
   0%{
@@ -146,7 +102,12 @@
   }
 }
 
-// rotation animation carte restaurant //
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    circle rotate                |         
+    //  |_________________________________________________|
+    //
+
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -171,7 +132,11 @@
   }
 }
 
-// apparition fondu restaurant card //
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    fondu                        |         
+    //  |_________________________________________________|
+    //
 @-webkit-keyframes card-fondu {
   0% {
     opacity: 0;

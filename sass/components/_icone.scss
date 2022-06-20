@@ -21,23 +21,18 @@
     }
 }
 
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    heart                        |         
+    //  |_________________________________________________|
+    //
+
 .icone__restaurant--heart {
     // border: 1px solid green;
     font-size: 25px;
 }
 
-.fa-heart:active {
-    animation: bgcolor 0.5s;
-    font-weight: 900;
-    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-}
-
 .fa-heart:hover {
-    animation: bgcolor 0.5s;
     font-weight: 900;
     background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
     color: transparent;

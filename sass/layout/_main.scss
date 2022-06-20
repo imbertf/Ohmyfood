@@ -1,6 +1,6 @@
     .main__carte {
         margin-top: -45px;
-        background: #efefef;
+        background: $light-color;
         border-radius: 50px 50px 0 0;
 
         @include tablette-only {
@@ -12,17 +12,10 @@
         }
 
         &--titre {
-            font-family: 'Shrikhandregular';
             @include card-base--flex;
 
-            @include tablette-only {
-                justify-content: center;
-                align-items: center;
-            }
-
-            @include desktop-only {
-                justify-content: center;
-                align-items: center;
+            @include tablette-desktop {
+                @include flex-center;
             }
         }
 
@@ -30,12 +23,7 @@
             // border: 1px solid green;
             padding: 15px;
 
-            @include tablette-only {
-                width: 100%;
-                padding: 0;
-            }
-
-            @include desktop-only {
+            @include tablette-desktop {
                 width: 100%;
                 padding: 0;
             }
@@ -43,25 +31,15 @@
             & h1 {
                 font-size: 35px;
 
-                @include tablette-only {
+                @include tablette-desktop {
                     margin-right: 10px;
                 }
-
-                @include desktop-only {
-                    margin-right: 10px;
-                }
-
             }
         }
     }
 
     .main__menu {
-        @include tablette-only {
-            width: 450px;
-            @include flex-column-center;
-        }
-
-        @include desktop-only {
+        @include tablette-desktop {
             width: 450px;
             @include flex-column-center;
         }
@@ -79,44 +57,8 @@
         font-size: 20px;
     }
 
-    .main__vignettes {
-        // border: 1px solid green;
-        background: #fff;
-        border-radius: 16px;
-        margin: 20px 0;
-        display: flex;
-        align-items: center;
-
-        &--txt {
-            // border: 1px solid green;
-            width: 70%;
-            height: 100%;
-            margin-left: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            & p,
-            h3 {
-                margin: 2px;
-            }
-        }
-    }
-
-    .main__animation--price {
-        // border: 1px solid green;
-        margin: 10px;
-        width: 30%;
-        height: 40px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-
     .main__btn--bottom {
-        // border: 1px solid green;
-        display: flex;
-        justify-content: center;
+        @include flex-center;
     }
 
     .main__h2 {

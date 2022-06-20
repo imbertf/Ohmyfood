@@ -1,11 +1,9 @@
 .header__mobile {
     // border: 1px solid green;
-    display: flex;
-    justify-content: center;
     height: 60px;
-    align-items: center;
     box-shadow: 0px 0px 5px grey;
-    position: relative;
+    z-index: 1;
+    @include flex-center;
     @include desktop-only {
         height: 200px;
     }
@@ -19,8 +17,7 @@
     &--logo {
         // border: 1px solid green;
         width: 150px;
-        display: flex;
-        justify-content: center;
+        @include flex-center;
 
         & img {
             // border: 1px solid green;
@@ -45,9 +42,7 @@
     // border: 1px solid green;
     background: #DBDBDB;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     &--txt{
         // border: 1px solid green;
         width: 150px;

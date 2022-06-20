@@ -1,20 +1,17 @@
 footer {
     // border: 1px solid green;
-    background: #3C3C3C;
-    color: white;
+    background: $dark-color;
+    color: $card-color;
     display: flex;
     flex-direction: column;
     padding: 0 15px;
 
     & a {
         text-decoration: none;
-        color: white;
+        color: $card-color;
     }
 
-    @include tablette-only {
-        align-items: center;
-    }
-    @include desktop-only {
+    @include tablette-desktop {
         align-items: center;
     }
 }
@@ -34,6 +31,7 @@ footer {
         flex-direction: row;
         width: 100%;
     }
+
     @include desktop-only {
         flex-direction: row;
         align-items: center;

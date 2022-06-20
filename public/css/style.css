@@ -67,49 +67,6 @@
     transform: scale(0);
   }
 }
-@keyframes heart-background {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@-webkit-keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-}
-@keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
 @-webkit-keyframes slide-left {
   0% {
     opacity: 0;
@@ -213,19 +170,13 @@
   }
 }
 .main__carte--titre {
-  font-family: "Shrikhandregular";
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 830px) and (max-width: 1160px) {
+@media screen and (min-width: 830px) {
   .main__carte--titre {
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1160px) {
-  .main__carte--titre {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -233,13 +184,7 @@
 .main__carte--box {
   padding: 15px;
 }
-@media screen and (min-width: 830px) and (max-width: 1160px) {
-  .main__carte--box {
-    width: 100%;
-    padding: 0;
-  }
-}
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 830px) {
   .main__carte--box {
     width: 100%;
     padding: 0;
@@ -248,26 +193,13 @@
 .main__carte--box h1 {
   font-size: 35px;
 }
-@media screen and (min-width: 830px) and (max-width: 1160px) {
-  .main__carte--box h1 {
-    margin-right: 10px;
-  }
-}
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 830px) {
   .main__carte--box h1 {
     margin-right: 10px;
   }
 }
 
-@media screen and (min-width: 830px) and (max-width: 1160px) {
-  .main__menu {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 830px) {
   .main__menu {
     width: 450px;
     display: flex;
@@ -287,38 +219,10 @@
   font-size: 20px;
 }
 
-.main__vignettes {
-  background: #fff;
-  border-radius: 16px;
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-}
-.main__vignettes--txt {
-  width: 70%;
-  height: 100%;
-  margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main__vignettes--txt p,
-.main__vignettes--txt h3 {
-  margin: 2px;
-}
-
-.main__animation--price {
-  margin: 10px;
-  width: 30%;
-  height: 40px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
 .main__btn--bottom {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main__h2 {
@@ -326,12 +230,12 @@
 }
 
 .header__mobile {
+  height: 60px;
+  box-shadow: 0px 0px 5px grey;
+  z-index: 1;
   display: flex;
   justify-content: center;
-  height: 60px;
   align-items: center;
-  box-shadow: 0px 0px 5px grey;
-  position: relative;
 }
 @media screen and (min-width: 1160px) {
   .header__mobile {
@@ -347,6 +251,7 @@
   width: 150px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .header__mobile--logo img {
   width: 150px;
@@ -407,21 +312,16 @@
 
 footer {
   background: #3C3C3C;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   padding: 0 15px;
 }
 footer a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
-@media screen and (min-width: 830px) and (max-width: 1160px) {
-  footer {
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 830px) {
   footer {
     align-items: center;
   }
@@ -467,9 +367,6 @@ footer a {
   margin: 0 12px 0 0;
 }
 
-.article {
-  border: 1px solid green;
-}
 .article__presentation {
   display: flex;
   flex-direction: column;
@@ -501,9 +398,9 @@ footer a {
     align-items: center;
   }
   .article__fonctionnement--bloc-card {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
   }
 }
 .article__fonctionnement h2 {
@@ -536,8 +433,8 @@ footer a {
   height: 30px;
   border-radius: 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: white;
   background: #9356DC;
 }
@@ -549,14 +446,9 @@ footer a {
   flex-direction: column;
   align-items: flex-start;
 }
-@media screen and (min-width: 830px) and (max-width: 1160px) {
+@media screen and (min-width: 830px) {
   .section__restaurant {
     display: flex;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1160px) {
-  .section__restaurant {
     align-items: center;
   }
 }
@@ -680,18 +572,7 @@ body {
   font-size: 25px;
 }
 
-.fa-heart:active {
-  animation: bgcolor 0.5s;
-  font-weight: 900;
-  background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-
 .fa-heart:hover {
-  animation: bgcolor 0.5s;
   font-weight: 900;
   background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
   color: transparent;
@@ -731,13 +612,7 @@ body {
   width: 100%;
   height: 250px;
 }
-@media screen and (min-width: 830px) and (max-width: 1160px) {
-  .vignette__restaurant {
-    width: 300px;
-    margin: 10px;
-  }
-}
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 830px) {
   .vignette__restaurant {
     width: 300px;
     margin: 10px;
@@ -748,18 +623,18 @@ body {
 }
 @media screen and (min-width: 830px) and (max-width: 1160px) {
   .vignette__restaurant--bloc-card {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
     justify-content: space-around;
     align-content: center;
   }
 }
 @media screen and (min-width: 1160px) {
   .vignette__restaurant--bloc-card {
+    height: 310px;
     display: flex;
     justify-content: space-between;
-    height: 310px;
   }
 }
 .vignette__restaurant a {

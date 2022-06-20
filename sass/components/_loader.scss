@@ -36,29 +36,12 @@ body{
     position: relative;
 }
 
-///// Loader Quart de cercle /////
-
-// .loader-quart{
-//     border-radius: 50px;
-//     border: 6px solid rgb(255,255,255,0.4);
-// }
-// .loader-quart::after{
-//     content:"";
-//     position: absolute;
-//     top: -6px;
-//     left: -6px;
-//     bottom: -6px;
-//     right: -6px;
-//     border-radius: 50px;
-//     border: 6px solid transparent;
-//     border-top-color: $primary-color;
-//     border-bottom-color: $secondary-color;
-//     animation: spin 1.5s linear infinite;
-//     -webkit-animation: spin 1.5s linear infinite;
-// }
-
-///// Loader double cercle /////
-
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    loader                       |         
+    //  |_________________________________________________|
+    //
+    
 .loader-double{
     border-radius: 50px;
     border: 6px solid transparent;
