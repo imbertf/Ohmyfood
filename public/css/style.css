@@ -51,7 +51,7 @@
 }
 @-webkit-keyframes loader-opacity {
   0% {
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -60,7 +60,7 @@
 }
 @keyframes loader-opacity {
   0% {
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -215,7 +215,7 @@
 }
 
 .main__menu > p {
-  border-bottom: 3px solid yellowgreen;
+  border-bottom: 3px solid #99E2D0;
   width: 50px;
   font-size: 20px;
 }
@@ -471,6 +471,7 @@ body {
   background-color: #99E2D0;
   height: 500px;
   line-height: 500px;
+  z-index: 2;
   text-align: center;
   display: flex;
   font-size: 30px;
@@ -484,7 +485,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   background-color: #81ecec;
   animation: loader-opacity 1s ease-out both;
   -webkit-animation: loader-opacity 1s ease-out both;
@@ -498,6 +499,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  z-index: 2;
 }
 
 .loader-double {
@@ -614,6 +616,17 @@ body {
   background: none;
   color: grey;
 }
+.vignette__fonctionnement--animation {
+  background-color: #9356DC;
+  opacity: 1;
+  transition: transform 100ms;
+}
+.vignette__fonctionnement:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.vignette__fonctionnement:hover i {
+  color: #9356DC;
+}
 
 .vignette__restaurant {
   border-radius: 10px;
@@ -689,8 +702,8 @@ body {
   opacity: 0;
   -webkit-animation: card-fondu 1s ease-in both;
   animation: card-fondu 1s ease-in both;
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 @media screen and (min-width: 830px) and (max-width: 1160px) {
   .card__box--4cards {
@@ -706,8 +719,8 @@ body {
   opacity: 0;
   -webkit-animation: card-fondu 1s ease-in both;
   animation: card-fondu 1s ease-in both;
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 @media screen and (min-width: 830px) and (max-width: 1160px) {
   .card__box {
@@ -723,8 +736,8 @@ body {
   opacity: 0;
   -webkit-animation: card-fondu 1s ease-in both;
   animation: card-fondu 1s ease-in both;
-  animation-delay: 3.5s;
-  -webkit-animation-delay: 3.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 @media screen and (min-width: 830px) and (max-width: 1160px) {
   .card__box--1 {
@@ -740,8 +753,8 @@ body {
   opacity: 0;
   -webkit-animation: card-fondu 1s ease-in both;
   animation: card-fondu 1s ease-in both;
-  animation-delay: 4s;
-  -webkit-animation-delay: 4s;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
 }
 @media screen and (min-width: 830px) and (max-width: 1160px) {
   .card__box--2 {

@@ -54,7 +54,7 @@
 
 @-webkit-keyframes loader-opacity {
   0% {
-    opacity: .8;
+    opacity: 1;
   }
 
   100% {
@@ -65,7 +65,7 @@
 
 @keyframes loader-opacity {
   0% {
-    opacity: .8;
+    opacity: 1;
   }
 
   100% {
@@ -73,7 +73,6 @@
     transform: scale(0);
   }
 }
-
 
     //   _________________________________________________
     //  |                                                 |

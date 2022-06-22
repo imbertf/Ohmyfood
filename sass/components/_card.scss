@@ -16,7 +16,23 @@
             background: none;
             color: grey;
         }
+
+        &--animation {
+            background-color: $primary-color;
+            opacity: 1;
+            transition: transform 100ms;
+        }
+
+        &:hover {
+            background-color: rgba($color: #9356DC, $alpha: .2);
+        }
+
+        &:hover i {
+            color: $primary-color;
+        }
     }
+
+
 
     .vignette__restaurant {
 
