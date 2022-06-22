@@ -23,6 +23,7 @@
         &__fonctionnement {
 
             // border: 1px solid green;
+
             @include tablette-only {
                 &--bloc-card {
                     display: flex;
@@ -35,6 +36,7 @@
 
                 &--bloc-card {
                     width: 100%;
+                    max-width: 1440px;
                     display: flex;
                     justify-content: space-between;
                 }

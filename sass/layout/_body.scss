@@ -3,6 +3,7 @@
         @include desktop-only;
         display: flex;
         flex-direction: column;
+        height: 2560px;
 
         & h1 {
             @include font-title;

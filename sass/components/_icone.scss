@@ -5,12 +5,10 @@
     width: 80px;
     height: 30px;
     margin-top: 10px;
-    display: flex;
     background: aquamarine;
     color: green;
     font-weight: bolder;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     @include tablette-only {
         right: inherit;
@@ -21,33 +19,45 @@
     }
 }
 
-    //   _________________________________________________
-    //  |                                                 |
-    //  |                    heart                        |         
-    //  |_________________________________________________|
-    //
+//   _________________________________________________
+//  |                                                 |
+//  |                    heart                        |         
+//  |_________________________________________________|
+//
 
-.icone__restaurant--heart {
-    // border: 1px solid green;
-    font-size: 25px;
-}
+    .fa-heart {
+        font-size: 25px;
+    }
 
-.fa-heart:active {
-    font-weight: 900;
-    background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-}
+    .heart {
+        font-size: 25px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        -webkit-text-stroke: 1px white;
+    }
 
-@include tablette-desktop {
-    .fa-heart:hover {
-        font-weight: 900;
-        background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-        color: transparent;
+    .heart-color {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: linear-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        cursor: pointer;
+        opacity: 0;
+        transform: scale(0);
+        transition: .3s ease;
     }
-}
+
+    .heart:hover .heart-color {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .heart:hover {
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px white;
+    }

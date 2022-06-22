@@ -47,7 +47,7 @@
         &--box {
             @include desktop-only {
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
             }
         }
     }

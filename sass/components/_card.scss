@@ -51,6 +51,7 @@
 
         &--bloc-card {
             width: 100%;
+            max-width: 1440px;
 
             @include tablette-only {
                 width: 80%;

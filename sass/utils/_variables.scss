@@ -18,3 +18,14 @@ $tertiary-color: #99E2D0;
 $light-color: #efefef;
 $card-color: #fff;
 $dark-color: #3C3C3C;
+
+    //   _________________________________________________
+    //  |                                                 |
+    //  |                    maps                         |         
+    //  |_________________________________________________|
+    //
+
+$breakpoints: (
+    mobile: 830px,
+    tablette: 1160px
+);
