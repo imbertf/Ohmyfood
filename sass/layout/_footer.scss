@@ -59,3 +59,11 @@ footer {
         }
     }
 }
+
+.pepiteggs {
+    display: none;
+    color: greenyellow;
+    & i{
+        color: white;
+    }
+}

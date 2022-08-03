@@ -140,7 +140,6 @@
 .bloc__page {
   display: flex;
   flex-direction: column;
-  height: 2560px;
 }
 .bloc__page h1 {
   font-family: "Shrikhand-regular";
@@ -374,6 +373,14 @@ footer a {
 .footer__group--icone i {
   font-size: 13px;
   margin: 0 12px 0 0;
+}
+
+.pepiteggs {
+  display: none;
+  color: greenyellow;
+}
+.pepiteggs i {
+  color: white;
 }
 
 .article__presentation {
